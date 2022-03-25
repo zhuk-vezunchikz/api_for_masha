@@ -20,9 +20,7 @@ app.set('port', (PORT || 3001));
 app.get('/', function(request, response) {
     var result = 'App is running'
     response.send(result);
-}).listen(app.get('port'), function() {
-    console.log('App is running, server is listening on port ', app.get('port'));
-});
+})
 
 const start = async () => {
     try {
@@ -30,7 +28,9 @@ const start = async () => {
             useNewUrlParser: true,
             useUnifiedTopology: true,
         })
-        app.listen(PORT, () => console.log(`Server working on port ${PORT}...`))
+        app.listen(app.get('port'), function() {
+            console.log('App is running, server is listening on port ', app.get('port'));
+        });
     } catch (e) {
         console.log('Server Error', e.message)
         process.exit(1)
