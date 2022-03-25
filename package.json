@@ -4,6 +4,7 @@
   "description": "",
   "main": "src/app.cjs",
   "scripts": {
+    "start": "node src/app.cjs",
     "dev": "nodemon src/app.cjs"
   },
   "keywords": [],
