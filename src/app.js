@@ -5,8 +5,8 @@ const employeesRouter = require("./routing/employeesRouter.js");
 const profileRouter = require("./routing/profileRouter.js");
 const bodyParser = require('body-parser')
 
-const PORT = config.get('port') || 3001
-const MONGO_URL = config.get('mongoURL')
+const PORT = process.env.PORT || 3001
+const MONGO_URL = process.env.MONGO_URL || "mongodb+srv://zhuk-vezunchik:vezunchik05011996@cluster0.wobx9.mongodb.net/databaseForMasha?retryWrites=true&w=majority"
 
 const app = express()
 
