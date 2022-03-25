@@ -2,10 +2,10 @@
   "name": "api_for_masha",
   "version": "1.0.0",
   "description": "",
-  "main": "src/app.cjs",
+  "main": "src/app.js",
   "scripts": {
-    "start": "node src/app.cjs",
-    "dev": "nodemon src/app.cjs"
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
   },
   "keywords": [],
   "author": "",

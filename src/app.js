@@ -1,8 +1,8 @@
 const express = require('express')
 const config = require('config')
 const mongoose = require('mongoose')
-const employeesRouter = require("./routing/employeesRouter.cjs");
-const profileRouter = require("./routing/profileRouter.cjs");
+const employeesRouter = require("./routing/employeesRouter.js");
+const profileRouter = require("./routing/profileRouter.js");
 const bodyParser = require('body-parser')
 
 const PORT = config.get('port') || 3001
