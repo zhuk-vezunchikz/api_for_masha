@@ -21,7 +21,7 @@ const start = async () => {
             useNewUrlParser: true,
             useUnifiedTopology: true,
         })
-        app.listen(PORT, () => console.log(`Server working on port ${PORT}...`))
+        app.listen(3001, () => console.log(`Server working on port ${PORT}...`))
     } catch (e) {
         console.log('Server Error', e.message)
         process.exit(1)
