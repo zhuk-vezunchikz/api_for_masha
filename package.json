@@ -1,0 +1,22 @@
+{
+  "name": "api_for_masha",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.cjs",
+  "scripts": {
+    "dev": "nodemon src/app.cjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "config": "^3.3.7",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.8"
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "nodemon": "^2.0.15"
+  }
+}
