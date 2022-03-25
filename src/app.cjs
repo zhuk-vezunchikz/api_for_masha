@@ -15,22 +15,13 @@ const jsonParser = bodyParser.json()
 app.use('/api', jsonParser, employeesRouter)
 app.use('/api', profileRouter)
 
-app.set('port', (PORT || 3001));
-
-app.get('/', function(request, response) {
-    var result = 'App is running'
-    response.send(result);
-})
-
 const start = async () => {
     try {
         await mongoose.connect(MONGO_URL, {
             useNewUrlParser: true,
             useUnifiedTopology: true,
         })
-        app.listen(app.get('port'), function() {
-            console.log('App is running, server is listening on port ', app.get('port'));
-        });
+        app.listen(PORT, () => console.log(`Server working on port ${PORT}...`))
     } catch (e) {
         console.log('Server Error', e.message)
         process.exit(1)
