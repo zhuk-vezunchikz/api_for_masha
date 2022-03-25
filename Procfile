@@ -1,1 +1,1 @@
-worker: node app.js
+worker: node app.js --port $0.0.0.0
